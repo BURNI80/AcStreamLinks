@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +18,7 @@
             margin: 0;
             text-align: center;
         }
+
         table {
             width: 60vw;
             border-collapse: collapse;
@@ -24,17 +26,22 @@
             border-radius: 10px;
             overflow: hidden;
         }
-        th, td {
+
+        th,
+        td {
             padding: 12px;
             text-align: left;
             border-bottom: 1px solid #333;
         }
+
         th {
             background-color: #333;
         }
+
         tr:hover {
             background-color: #292929;
         }
+
         button {
             background-color: #6200ea;
             color: white;
@@ -43,19 +50,21 @@
             cursor: pointer;
             border-radius: 5px;
         }
+
         button:hover {
             background-color: #3700b3;
         }
 
         @media (max-width: 768px) {
             table {
-            width: 90vw;
-        }
+                width: 90vw;
+            }
         }
     </style>
 </head>
+
 <body>
-    <h1>ACSTREAM LINKS</h1> 
+    <h1>ACSTREAM LINKS</h1>
     <table>
         <thead>
             <tr>
@@ -66,21 +75,31 @@
         <tbody>
             <script>
                 const streams = [
-                    {"nombre": "DAZN F1 1080 (Fórmula 1)", "contentId": "d6281d4e6310269b416180442a470d23a4a99dc9"},
-                    {"nombre": "DAZN F1 1080 (Fórmula 1)", "contentId": "2c6e4c897661e6b0257bfe931b66d20b2ec763b6"},
-                    {"nombre": "DAZN F1 1080 (Fórmula 1)", "contentId": "71eef80158aa8b37f3dc59f6793c6696df9a2dfa"},
-                    {"nombre": "DAZN F1 720 (Fórmula 1)", "contentId": "268289e7a3c5209960b53b4d43c8c65fab294b85"},
-                    {"nombre": "M. LaLiga 1080P", "contentId": "94d34491106e00394835c8cb68aa94481339b53f"},
-                    {"nombre": "M. LaLiga 1080 MultiAudio", "contentId": "d3de78aebe544611a2347f54d5796bd87f16c92d"},
-                    {"nombre": "M. LaLiga 1080 MultiAudio", "contentId": "6d05b31e5e8fdae312fbd57897363a7b10ddb163"},
-                    {"nombre": "M. LaLiga 720", "contentId": "1bc437bce57b4b0450f6d1f8d818b7e97000745e"},
-                    {"nombre": "M. LaLiga 2 1080", "contentId": "83c6c4942d69f4aa324aa746c5d7dbfd7d1572b3"},
-                    {"nombre": "M. LaLiga 2 720", "contentId": "f31a586422c9244196c810c84b6c85da350318a5"},
-                    {"nombre": "M. LaLiga 3 1080", "contentId": "ebe14f1edeb49f2253e3b355a8beeadc9b4f0bc4"},
-                    {"nombre": "M. LaLiga 3 720", "contentId": "835639b89db00cc0d94660da3c10b6e38bfbcdc1"},
-                    {"nombre": "M. LaLiga 4 1080", "contentId": "68697ea4f261289d97bbc3418ad3cbc4180aa32f"},
-                    {"nombre": "La Liga BAR 1080", "contentId": "608b0faf7d3d25f6fe5dba13d5e4b4142949990e"},
-                    {"nombre": "DAZN LaLiga 1080 MultiAudio", "contentId": "110d441ddc9713a7452588770d2bc85504672f47"}
+                    { "nombre": "DAZN F1 1080 (Fórmula 1)", "contentId": "d6281d4e6310269b416180442a470d23a4a99dc9" },
+                    { "nombre": "DAZN F1 1080 (Fórmula 1)", "contentId": "2c6e4c897661e6b0257bfe931b66d20b2ec763b6" },
+                    { "nombre": "DAZN F1 1080 (Fórmula 1)", "contentId": "71eef80158aa8b37f3dc59f6793c6696df9a2dfa" },
+                    { "nombre": "DAZN F1 720 (Fórmula 1)", "contentId": "268289e7a3c5209960b53b4d43c8c65fab294b85" },
+                    { "nombre": "M. LaLiga 1080P", "contentId": "94d34491106e00394835c8cb68aa94481339b53f" },
+                    { "nombre": "M. LaLiga 1080 MultiAudio", "contentId": "d3de78aebe544611a2347f54d5796bd87f16c92d" },
+                    { "nombre": "M. LaLiga 1080 MultiAudio", "contentId": "6d05b31e5e8fdae312fbd57897363a7b10ddb163" },
+                    { "nombre": "M. LaLiga 720", "contentId": "1bc437bce57b4b0450f6d1f8d818b7e97000745e" },
+                    { "nombre": "M. LaLiga 2 1080", "contentId": "83c6c4942d69f4aa324aa746c5d7dbfd7d1572b3" },
+                    { "nombre": "M. LaLiga 3 1080", "contentId": "ebe14f1edeb49f2253e3b355a8beeadc9b4f0bc4" },
+                    { "nombre": "M. LaLiga 4 1080", "contentId": "68697ea4f261289d97bbc3418ad3cbc4180aa32f" },
+                    { "nombre": "La Liga BAR 1080", "contentId": "608b0faf7d3d25f6fe5dba13d5e4b4142949990e" },
+                    { "nombre": "DAZN LaLiga 1080 MultiAudio", "contentId": "110d441ddc9713a7452588770d2bc85504672f47" },
+                    { "nombre": "DAZN LaLiga 1080 MultiAudio", "contentId": "ec29289b0b14756e686c03a501bae1efa05be70c" },
+                    { "nombre": "DAZN LaLiga 1080 MultiAudio", "contentId": "6de4794cd02f88f14354b5996823413a59a1de0f" },
+                    { "nombre": "DAZN LaLiga 2 1080 MultiAudio", "contentId": "51dbbfb42f8091e4ea7a2186b566a40e780953d9" },
+                    { "nombre": "LaLiga Smartbank 1080", "contentId": "b2706a7ffbea236a3b398139a3a606ada664c0eb" },
+                    { "nombre": "LaLiga Smartbank 2 1080", "contentId": "0cfdfde1b70623b8c210b0f7301be2a87456481d" },
+                    { "nombre": "LaLiga Smartbank 3 1080", "contentId": "fefd45ed6ff415e05f1341b7d9da2988eacd13ea" },
+                    { "nombre": "ESPN [BE]", "contentId": "79f10c6c6168e42bfc606f3f7b9e5f3ca79dedab" },
+                    { "nombre": "ESPN HD [US]", "contentId": "4b4907de51ec11087d4bed5876f2a0c68264f442" },
+                    { "nombre": "ESPN2 HD [US]", "contentId": "664eb5fe460b96941aed633959a845b185cd8394" },
+                    { "nombre": "BT Sport / ESPN [UK]", "contentId": "fc5089d8e1519872fdf951779ccbca913acc9bce" },
+                    { "nombre": "HBO HD", "contentId": "6e551afdba1cdb99f5b9c1aef6abb694dc288393" },
+                    { "nombre": "HBO 2", "contentId": "e3f3f3857f428c8eb7fcbb2234f7545a239be858" },
                 ];
 
                 streams.forEach(stream => {
@@ -95,4 +114,5 @@
         </tbody>
     </table>
 </body>
+
 </html>
