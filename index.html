@@ -78,13 +78,39 @@
             font-weight: 100;
             font-size: 18px;
         }
+
+        .menu{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 500px;
+            gap: 10px;
+
+            > a{
+                background-color: #6200ea;
+                color: white;
+                font-weight: bold;
+                padding: 10px;
+                border-radius: 10px;
+            }
+        }
     </style>
 </head>
 
 <body>
     <h1>ACSTREAM LINKS</h1>
-    <a href="#Movistar">Ir a la clase</a>
-    <h5>FORMULA 1</h5>
+    <h3>Menu</h3>
+    <div class="menu">
+        <a href="#Movistar">Movistar</a>
+        <a href="#DAZN">DAZN</a>
+        <a href="#La Liga">La Liga</a>
+        <a href="#ESPN & EUROESPORT">ESPN & EUROESPORT</a>
+        <a href="#MGP TV">MGP TV</a>
+        <a href="#CANALES TV">CANALES TV</a>
+    </div>
+    
+    <h3>FORMULA 1</h3>
     <table id="f1">
         <thead>
             <tr>
@@ -119,7 +145,7 @@
         </tbody>
     </table>
 
-    <h5>UFC</h5>
+    <h3>UFC</h3>
     <table id="UFC">
         <thead>
             <tr>
@@ -150,7 +176,7 @@
         </tbody>
     </table>
 
-    <h5>ALL</h5>
+    <h3>ALL</h3>
     <table id="all">
         <thead>
             <tr>
