@@ -385,46 +385,6 @@
         </aside>
     </div>
 </body>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-    let clicksEnlace = {}; // Objeto para rastrear los clics en cada enlace
-
-    document.addEventListener("click", function(event) {
-        let elemento = event.target.closest("a"); // Detecta si se hizo clic en un <a>
-        
-        if (elemento && elemento.href) {
-            event.preventDefault(); // Evita la redirección inmediata
-
-            let urlDestino = elemento.href;
-
-            if (!clicksEnlace[urlDestino]) {
-                clicksEnlace[urlDestino] = 0; // Inicializa contador si es la primera vez
-            }
-
-            clicksEnlace[urlDestino]++; // Incrementa el contador de clics para este enlace
-
-            if (clicksEnlace[urlDestino] === 1) {
-                // Primera vez: Muestra un anuncio
-                if (typeof adsbygoogle !== "undefined") {
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                }
-                alert("Mostrando anuncio... Presiona nuevamente para continuar.");
-            } else {
-                // Segunda vez: Redirige al enlace real
-                window.location.href = urlDestino;
-            }
-        }
-    });
-</script>
-
-<!-- Anuncio intersticial -->
-<ins class="adsbygoogle"
-    style="display:none"
-    data-ad-client="ca-pub-XXXXXXXXXXXXXXX"
-    data-ad-slot="YYYYYYYYYY"
-    data-ad-format="auto"
-    data-full-width-responsive="true">
-</ins>
 
 
 </html>
